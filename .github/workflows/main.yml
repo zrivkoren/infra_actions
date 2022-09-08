@@ -66,6 +66,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           # Выполняет pull образа с DockerHub c ssh  
           sudo docker pull zrivkoren/api_yamdb
