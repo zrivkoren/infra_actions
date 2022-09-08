@@ -67,7 +67,7 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          # Выполняет pull образа с DockerHub c ssh 
+          # Выполняет pull образа с DockerHub c ssh  
           sudo docker pull zrivkoren/api_yamdb
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
